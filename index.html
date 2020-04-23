@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://kit.fontawesome.com/efd92865ea.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+</head>
+<body>
+<script>
+  AOS.init();
+</script>
+
+
+
+<!-- <script type="text/javascript" src="jquery-3.4.1.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+    
+    $('body').prepend('<section id="contact"><section>');
+    $('#contact').append('<h1 style="color: #F1C111;margin-top:100px;font-size: 42px;text-align: center;" data-aos="zoom-in" data-aos-duration="3000">Contact Us!</h1>');
+  	$('#contact').append('<h1 style="color: #0C8195;margin-top:10px;font-size: 32px;text-align: center;" data-aos="zoom-in" data-aos-duration="3000">We make creative <span style="color: #F1C111;">brands</span> only</h1>');
+
+    $('#contact').append('<section id="contact1"></section>');
+    var contact1=document.getElementById('contact1');
+    contact1.innerHTML ='<form data-aos="fade-up" data-aos-duration="3000"><input type="text" placeholder="Your name..." id="name"><input type="email" placeholder="Your email..." id="email"><textarea placeholder="Your message..." id="message"></textarea><button id="contactBtn">SEND MESSAGE</button></form>';
+    
+     $('#contact1').append(
+     	'<ul data-aos="fade-up" data-aos-duration="3000"><li><i class="fas fa-envelope"></i>hello@company.com</li><li><i class="fas fa-phone-alt"></i>050 060 0780 / 050 060 0110</li> <li><i class="fas fa-map-marker-alt"></i>1186 New Street, ST 10990</li></ul>');
+
+     $('#contact').append('<div class="icons" data-aos="zoom-in" data-aos-duration="3000"><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a><a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a><a href="https://www.gmail.com"><i class="fab fa-google-plus-g"></i></a></div>');
+
+     $('.icons').wrap('<section class="footer"></section>');
+     $('.footer').append('<p data-aos="zoom-in" data-aos-duration="3000">Copyright © 2017 Company Name | Design: Tooplate</p>');
+ 
+
+    $('body').prepend('<section id="clients"><section>');
+    $('#clients').append('<div class="image2"></div>');
+    var img = document.getElementsByClassName('image2')[0];
+    img.innerHTML = '<img src="images/female-avatar.png" width="600" height="550" data-aos="fade-up" data-aos-duration="3000">';
+    $('#clients').append('<div class="text4" data-aos="fade-up" data-aos-duration="3000"></div>');
+    $('#clients .text4').append('<h3>CLIENT TESTIMONIALS</h3>');
+    $('<p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo.</p>').appendTo('#clients .text4');
+    $('#clients .text4').append('<h4><span style="color: #F1C111;font-size: 23px;">Mary Zoe</span><span style="color: grey;font-weight: lighter;"> / Digital Agency (CEO)</h4>');
+    
+
+    $('body').prepend('<section id="gallery1"></section>');
+    $('#gallery1').append('<h1 style="color: #F1C111;margin-top:200px;font-size: 42px;text-align: center;" data-aos="zoom-in" data-aos-duration="3000">Gallery</h1>');
+    $('#gallery1').append('<section id="gallery"></section>');
+    $('#gallery').append('<div class="gallery" data-aos="fade-up" data-aos-duration="3000"></div>');
+    $('#gallery .gallery:nth-child(1)').append('<div class="image"><img src="images/01-item.jpg"></div>');
+    $('#gallery .gallery:nth-child(1)').append('<div class="text3"><p>Nature</p><h3>Robotic Light</h3></div>');
+
+    $('#gallery').append('<div class="gallery" data-aos="fade-up" data-aos-duration="3000"></div>');
+    $('#gallery .gallery:nth-child(2)').append('<div class="image"><img src="images/02-item.jpg"></div>');
+    $('#gallery .gallery:nth-child(2)').append('<div class="text3"><p>Architect</p><h3>Rock solid</h3></div>');
+
+    $('#gallery').append('<div class="gallery" data-aos="fade-up" data-aos-duration="3000"></div>');
+    $('#gallery .gallery:nth-child(3)').append('<div class="image"><img src="images/03-item.jpg"></div>');
+    $('#gallery .gallery:nth-child(3)').append('<div class="text3"><p>Focus</p><h3>Clean Design</h3></div>');
+
+    $('<div class="more" data-aos="fade-up" data-aos-duration="3000"><p>Do you want to see more?</p><a href="gallery.html">VISIT GALLERY</a></div>').appendTo('#gallery');
+    
+    $('body').prepend('<section id="info"></section>');
+    $('#info').append('<div class="text2" data-aos="fade-up" data-aos-duration="2000"></div>');
+    var head1=document.createElement('h1');
+    head1.innerHTML='he best <span style="color: #F1C111;">Digital Marketing agency</span> in Rio de Janeiro';
+    $('#info .text2').append(head1);
+     var para=document.createElement('p');
+    para.innerHTML='Total 5 HTML pages are included in this template from TemplateMo website. Please check 2 blog pages, project page, and contact page. <br /><br />You are <span style="color: #F1C111;">allowed</span> to use this template for commercial or non-commercial purpose. You are NOT allowed to redistribute the template ZIP file on template collection websites.';
+       $('#info .text2').append(para);
+
+       $('<img src="images/office.png" width="780" height="480">').appendTo('#info');
+       $('#info img').wrap('<div class="image" data-aos="fade-up" data-aos-duration="2000"></div>');
+
+ 
+
+    $('body').prepend('<section id="home"></section>')
+    $('#home').append('<div class="text"></div>');
+    var head=document.createElement('h1');
+    head.innerText="We are ready for your digital marketing";
+    $('#home .text').append(head);
+     $('#home .text').append('<a href="#">Lets dicuss together!</a>');
+     var para=document.createElement('p');
+    para.innerHTML='<i class="fas fa-phone-alt"></i> +99 080 070 4224';
+       $('#home .text').append(para);
+     $('#home').append('<div class="image"></div>');
+      var img=document.getElementsByClassName('image')[0];
+      img.innerHTML = '<button id="btnNew">+</button>';
+      $('#btnNew').css("textAlign","center");
+      $('#btnNew').css({"margin":"10% 35%","display":"none"});
+      var btn1=document.getElementById('btnNew');
+      
+     
+       $('#home').append('<div class="url"></div>');
+       $('.url').wrapInner('<form id="urlForm"></form>');
+       $('.url form').append('<label>Enter URL:</label><input type="text" id="imgUrl"/>');
+       $('.url').css({"display":"none"});
+
+
+        var arr = ["images/working-girl.png","images/female-avatar.png"];
+       var url = document.getElementById('imgUrl');
+        var iUrl =" ";
+
+
+       var form = document.getElementById('urlForm');
+       form.addEventListener('submit',function(e)
+       {
+       e.preventDefault();
+        iUrl = url.value;
+        arr.push(iUrl);
+      console.log(arr);
+        $('.url').css({"display":"none"});
+      });
+
+      btn1.onclick = function(){
+
+        $('.url').css({"display":"block"});
+       
+      
+      }
+
+     
+
+       var t = 0;
+       setInterval(changeImage, 2000);
+       
+       function changeImage()
+       {
+           var images = document.getElementsByClassName('image')[0];
+
+       if(t>=arr.length)
+       {
+           t = 0;
+          console.log(t,arr.length,"if");
+       }
+       
+           // console.log(arr);
+  
+
+           images.style.backgroundImage = `url(${arr[t]})`;
+           images.style.backgroundSize = "600px 350px";
+           images.style.backgroundRepeat = "no-repeat";
+           images.style.backgroundPosition = "0px -30px";
+           images.style.transition = "1s all linear";
+           console.log(t,arr.length);
+           // console.log(arr);
+           
+       
+       t++;
+      
+    }
+
+	$('body').prepend('<nav></nav>');
+	$('nav').append('<h1><i class="fas fa-chart-line"></i> Digital Trend </h1>');
+    $('nav h1').wrap('<section class="left-nav"></section>');
+    $('nav').append('<ul></ul>');
+    $('nav ul').wrap('<section class="right-nav"></section>');
+    $('nav ul').append('<li><a href="#home">Home</a></li><li><a href="#info">Info</a></li><li><a href="#gallery1">Gallery</a></li><li><a href="#clients">Clients</a></li><li><a href="#contact" class="contact">Contact</a></li>');
+
+
+
+const cBtn=document.getElementById('contactBtn');
+let formDataList=localStorage.getItem('formDataList') ? JSON.parse(localStorage.getItem('formDataList')) : [];
+
+localStorage.setItem('formDataList',JSON.stringify(formDataList));
+
+  cBtn.onclick=function()
+{
+  
+const name=document.getElementById('name').value;
+const email=document.getElementById('email').value;
+const message=document.getElementById('message').value;
+
+
+
+
+  if (name && email && message)
+            {
+                console.log(name, email, message);
+                let formData = {
+                    name,
+                    email,
+                    message
+                };
+                let formDataList = localStorage.getItem("formDataList");
+                if(formDataList){
+                    formDataList = JSON.parse(formDataList);
+                    formDataList.push(formData); // if already data exists push in formDataList array 
+                    localStorage.setItem("formDataList", JSON.stringify(formDataList));
+                    
+                    alert("Saved")
+                  
+                }
+                else{
+                    localStorage.setItem("formDataList", JSON.stringify([formData])); // first time inserting array so [] are used
+                    
+                    alert("Saved");
+                    
+                }
+            }
+            else{
+                alert("Fill All Fields")
+            }
+}
+
+</script>
+</body>
+
+</html>

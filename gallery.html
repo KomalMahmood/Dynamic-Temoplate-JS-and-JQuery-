@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gallery</title>
+	<link rel="stylesheet" type="text/css" href="styles2.css">
+	<script src="https://kit.fontawesome.com/efd92865ea.js" crossorigin="anonymous"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+
+<script>
+  AOS.init();
+</script>
+
+
+<!-- <script type="text/javascript" src="jquery-3.4.1.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+
+    $('body').append('<section class="header"></section>');
+    document.getElementsByClassName('header')[0].innerHTML = '<h1 data-aos="fade-down" data-aos-duration="3000">GALLERY<div class="line"></div></h1><a href="index.html" data-aos="fade-down" data-aos-duration="3000">Go to Home Page</a>';
+
+    
+    $('body').append('<div class="mainBox"></div>');
+    $('.mainBox').append('<div class="mainImg"></div>');
+    $('.mainImg').append('<img src="images/09-item.jpg" alt=""><i class="fa fa fa-chevron-left"></i><i class="fa fa fa-chevron-right"></i>');
+
+    $('.mainBox').append('<div class="thumbnails"></div>');
+    $('.thumbnails').append('<img class="active" src="images/09-item.jpg" alt=""><img src="images/10-item.jpg" alt=""><img src="images/11-item.jpg" alt=""><img src="images/06-item.jpg" alt=""><img src="images/08-item.jpg" alt=""><img src="images/03-item.jpg" alt=""><img src="images/04-item.jpg" alt=""><img src="images/05-item.jpg" alt="">');
+
+
+$(".thumbnails img").click(function() // equivalent to $(".thumbnails img").on("click",function(){});
+{
+    $(this).addClass("active");
+    $(this).siblings().removeClass("active");
+    $(".mainImg img").hide();
+    // $(".mainImg img").slideUp(10);
+    // $(".mainImg img").show(400);
+    $(".mainImg img").slideDown(400);
+    // $(".mainImg img").fadeIn(1000);
+    $(".mainImg img").attr("src",$(this).attr("src"));
+    
+});
+
+
+$(".mainImg i:nth-child(2)").click(function () {
+    if( $("img.active").is(":first-child"))
+        $(".thumbnails img:last-child ").click(); // The click() method attaches an event handler function to an HTML element. The function is executed when the user clicks on the HTML element. 
+    
+    else
+        $("img.active").prev().click();
+    });
+
+$(".mainImg i:nth-child(3)").click(function () {
+    if( $("img.active").is(":last-child"))
+        $(".thumbnails img:first-child ").click();
+    else
+        $("img.active").next().click();
+    });
+
+    
+   
+   $('body').append('<a href="https://www.facebook.com" class="iAnchor"><i class="fab fa-facebook-f"></i></a><a href="https://www.twitter.com" class="iAnchor"><i class="fab fa-twitter"></i></a><a href="https://www.linkedin.com" class="iAnchor"><i class="fab fa-linkedin-in"></i></a><a href="https://www.instagram.com" class="iAnchor"><i class="fab fa-instagram"></i></a><a href="https://www.gmail.com" class="iAnchor"><i class="fab fa-google-plus-g"></i></a>');
+   $('.iAnchor').wrapAll('<div class="icons" data-aos="zoom-in" data-aos-duration="3000"></div>');
+   $('.icons').wrap(' <section class="footer"></section>');
+   $('<p data-aos="zoom-in" data-aos-duration="3000">Copyright © 2017 Company Name | Design: Tooplate</p>').appendTo('.footer');
+   
+</script>
+</body>
+</html>
